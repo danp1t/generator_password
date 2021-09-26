@@ -1,4 +1,4 @@
-TOKEN = "1933871526:AAEM5xKu6JRUumbSMl3Q7_vfIjMMCmPVKiE"
+TOKEN = ""
 host = "localhost"
 user = "u1446208_danil"
 password = "odv101360"
