@@ -70,10 +70,6 @@ def welcome(message):
 """, parse_mode='html')
         # Отправить сообщение для настройки профиля user'а")
 
-@bot.message_handler(commands=["help"])
-def help_user(message):
-    bot.send_message(message.chat.id, 'Какая у тебя проблема? Выбери из списка ниже или напиши проблему в сообщении (мы ответим, в течение недели)' , rep)
-
 
 if __name__ == '__main__':
     bot.polling(none_stop=True)

@@ -1,7 +1,5 @@
-
-numbers_alhabet = '1234567890'
-str_alhabet = 'qwertyuiopasdfghjklzxcvbnm'
-pro_alhabet = 'QWERTYUIOPASDFGHJKLZXCVBNM'
-spec_alhabet = """!@.#$%^&*()_+=-[]{}:;"',/?\|<>№~"""
-TOKEN = ""
-
+TOKEN = "1933871526:AAEM5xKu6JRUumbSMl3Q7_vfIjMMCmPVKiE"
+host = "localhost"
+user = "u1446208_danil"
+password = "odv101360"
+db_name = "u1446208_generatorpasswordbot"
