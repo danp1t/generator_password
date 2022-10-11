@@ -1,0 +1,14 @@
+Generator a password
+
+version=1.0.0
+
+Type of password:
+    1) Standard password:
+        size_password = 8
+        libraries = latin_chars + dec_numbers
+
+    2) Password for phone:
+        size_password = 6
+        libraries = dec_numbers
+
+Thanks for attention!
