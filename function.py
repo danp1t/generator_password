@@ -15,7 +15,9 @@ def about_types_of_password():
 Types of password:
     
     1) Standard password (size=8, libraries = low_english + dec_numbers
-    2) Password for phone (size=6, library = dec_numbers)"""
+    2) Password for phone (size=6, library = dec_numbers)
+    3) Difficult password (size=12, libraries = low_english + dec_numbers + spec_chars)
+    4) Unreal password (size=16, libraries = low_english + dec_numbers + spec_chars + upper_english)"""
 
 def choice_type_password(n):
     """Here user choices type of password
@@ -28,3 +30,7 @@ def choice_type_password(n):
         return generator.create_standart_password()
     elif n == 2:
         return generator.create_password_phone()
+    elif n == 3:
+        return generator.create_difficult_password()
+    elif n == 4:
+        return generator.create_unreal_password()

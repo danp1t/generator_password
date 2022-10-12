@@ -3,8 +3,9 @@ import random
 
 #libraries for generator (CONST)
 low_english = "zxcvbnmasdfghjklpoiuytrewq"
+upper_english = "ZXCVBNMASDFGHJKLQWERTYUIOP"
 dec_numbers = '0123456789'
-
+spec_chars = ",.<>?/}]{[+=-_)(*&^:%$;№\|~`"
 
 def create_standart_password():
     """libraries = dec_number + low_english
@@ -27,3 +28,54 @@ def create_password_phone():
         password += random.choice(library)
 
     return password
+
+def create_difficult_password():
+    """Library = dec_number + low_english + spec_chars
+    size password = 12
+    Must contain at least one special character and a number."""
+
+    libraries = low_english + dec_numbers + spec_chars
+    password = ''
+    while True:
+        for i in range(12):  # size password
+            password += random.choice(libraries)
+
+        flag1 = 0
+        flag2 = 0
+        for k in password:
+            if k in dec_numbers:
+                flag1 = 1
+            if k in spec_chars:
+                flag2 += 1
+        if flag2 + flag1 == 2:
+            break
+        else:
+            password = ""
+    return password
+
+def create_unreal_password():
+    """Library = dec_number + low_english + spec_chars + upper_english
+        size password = 16"""
+
+    libraries = dec_numbers + spec_chars + upper_english + low_english
+    password = ''
+    while True:
+        for i in range(16):  # size password
+            password += random.choice(libraries)
+
+        flag1 = 0
+        flag2 = 0
+        flag3 = 0
+        for k in password:
+            if k in dec_numbers:
+                flag1 = 1
+            if k in spec_chars:
+                flag2 = 1
+            if k in upper_english:
+                flag3 = 1
+        if flag1 + flag2 + flag3 == 3:
+            break
+        else:
+            password = ""
+    return password
+

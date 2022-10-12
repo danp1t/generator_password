@@ -5,10 +5,20 @@ version=1.0.0
 Type of password:
     1) Standard password:
         size_password = 8
-        libraries = latin_chars + dec_numbers
+        libraries = low_latin + dec_numbers
 
     2) Password for phone:
         size_password = 6
         libraries = dec_numbers
+
+    3) Difficult password:
+        size_password = 12
+        libraries = low_latin + special_symbols + dec_numbers
+
+        Must contain at least one special character and a number.
+
+    4) Unreal password:
+        size_password = 16
+        libraries = low_latin + upper_latin + special_symbols + dec_number
 
 Thanks for attention!
