@@ -21,4 +21,10 @@ Type of password:
         size_password = 16
         libraries = low_latin + upper_latin + special_symbols + dec_number
 
+    5) Own type
+        size_password = 1-50
+        libraries = All available
+
+        Conditions for generating a password. You can choose the password size and libraries.
+
 Thanks for attention!

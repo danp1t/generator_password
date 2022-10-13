@@ -79,3 +79,43 @@ def create_unreal_password():
             password = ""
     return password
 
+def create_own_password(size, libraries_str):
+    while True:
+        password = ""
+        libraries = ""
+        for library in libraries_str:
+            if library == '1':
+                libraries += dec_numbers
+            elif library == '2':
+                libraries += low_english
+            elif library == '3':
+                libraries += upper_english
+            elif library == '4':
+                libraries += spec_chars
+            else:
+                return "Error. You specified a non-existent library"
+
+        for i in range(size):  # size password
+            password += random.choice(libraries)
+
+        flag1 = 0
+        flag2 = 0
+        flag3 = 0
+        flag4 = 0
+        for k in password:
+            if k in dec_numbers:
+                flag1 = 1
+            if k in spec_chars:
+                flag2 = 1
+            if k in upper_english:
+                flag3 = 1
+            if k in low_english:
+                flag4 = 1
+        if flag1 + flag2 + flag3 + flag4 == len(libraries_str):
+            break
+        else:
+            password = ""
+
+    return password
+
+

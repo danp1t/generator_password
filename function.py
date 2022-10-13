@@ -17,7 +17,8 @@ Types of password:
     1) Standard password (size=8, libraries = low_english + dec_numbers
     2) Password for phone (size=6, library = dec_numbers)
     3) Difficult password (size=12, libraries = low_english + dec_numbers + spec_chars)
-    4) Unreal password (size=16, libraries = low_english + dec_numbers + spec_chars + upper_english)"""
+    4) Unreal password (size=16, libraries = low_english + dec_numbers + spec_chars + upper_english)
+    5) Own password (size=1-50, libraries = any, other conditions)"""
 
 def choice_type_password(n):
     """Here user choices type of password
