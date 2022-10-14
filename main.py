@@ -25,10 +25,11 @@ while True:
     3) upper_english (ZXCVBNMASDFGHJKLQWERTYUIOP)
     4) special symbols (,.<>?/}]{[+=-_)(*&^:%$;№\|~`)
     
-For example: 124
+If you specify your character set as a library, then its length must be at least 5 characters. P.S. You can repeat characters to get the length you want.
+For example: 124 or 12453k!
                   
 Please, enter libraries numbers: """)
-            if len(libraties) > 4 or not(0 < size_password <= 50):
+            if not(0 < size_password <= 50):
                 '1' + 2
             password = generator.create_own_password(size_password, libraties)
             print()

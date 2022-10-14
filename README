@@ -25,6 +25,6 @@ Type of password:
         size_password = 1-50
         libraries = All available
 
-        Conditions for generating a password. You can choose the password size and libraries.
+        Conditions for generating a password. You can choose the password size and libraries(select libraries or enter your character set).
 
 Thanks for attention!
