@@ -3,18 +3,20 @@ import generator
 
 function.hello()
 print()
-function.what_your_type_password()
-type_of_password = input("Please, write your type of password or commands: ")
+
 
 while True:
+    function.what_your_type_password()
+    type_of_password = input("Please, write your type of password or commands: ")
     if type_of_password == '/wtp':
         print(function.about_types_of_password())
         type_of_password = input("Please, write your type of password or commands: ")
+    elif type_of_password == "/exit":
+        break
     elif type_of_password in ['1', '2', '3', '4']:
         password = function.choice_type_password(int(type_of_password))
         print()
         print("Your password: " + password)
-        break
     elif type_of_password == '5':
         try:
             size_password = int(input("Enter (numbers) password size (1-50): "))
@@ -34,7 +36,6 @@ Please, enter libraries numbers: """)
             password = generator.create_own_password(size_password, libraties)
             print()
             print("Your password: " + password)
-            break
 
         except:
             print("Error. Please, start again!")

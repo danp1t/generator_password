@@ -6,7 +6,7 @@ def hello():
 
 def what_your_type_password():
     """Letter for user about choice_type_password"""
-    print("Now you can choice type of password. If you don't know types of password that write command /wtp.")
+    print("Now you can choice type of password. If you don't know types of password that write command /wtp. \nIf you would like to end the program, please use the following command: /exit")
 
 def about_types_of_password():
     """All about types of password in generator!"""
